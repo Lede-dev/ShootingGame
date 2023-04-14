@@ -1,5 +1,6 @@
 package com.molruexception.shootinggame;
 
+import com.google.common.collect.Lists;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -35,7 +36,11 @@ public class GameCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        return null;
+        if (args.length != 1) {
+            return null;
+        }
+
+        return Lists.newArrayList("start", "stop");
     }
 
 }
