@@ -1,0 +1,4 @@
+name: ShootingGame
+version: '${version}'
+main: com.molruexception.shootinggame.ShootingGame
+api-version: 1.19
