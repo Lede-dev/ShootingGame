@@ -2,3 +2,7 @@ name: ShootingGame
 version: '${version}'
 main: com.molruexception.shootinggame.ShootingGame
 api-version: 1.19
+
+commands:
+  shoot:
+    permission: game.command.shoot
